@@ -33,7 +33,7 @@ function resolve(ip) {
   lastCountry = '';
   while (i < length) {
     if (ips[i] <= address && address <= ips[i + 1]) {
-      lastCountry = countries[i];
+      lastCountry = countries[(i / 2) || 0];
       return lastCountry;
     }
     i += 2;

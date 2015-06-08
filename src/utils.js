@@ -35,7 +35,10 @@ function isIPv4(ip) {
 }
 
 // basic ipv6 check
-var IPv6 = /^(?:[a-f0-9]{0,4}:)+(?:[a-f0-9]{1,4}|:)$/;
+var IPv6 = /^[a-f0-9:]{2,39}$/;
 function isIPv6(ip) {
   return IPv6.test(ip);
 }
+
+// returns typed Int32Array if possible
+var Int32ArrayMaybe = typeof Int32Array === typeof Array ? Int32Array : Object;

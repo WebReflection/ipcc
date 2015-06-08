@@ -59,7 +59,8 @@ function generate() {
           lb = transform(lowerBound),
           ub = transform(upperBound)
         ;
-        ipvJSIndex[ipvJS.push(lb, ub) - 2] = countryCode;
+        ipvJS.push(lb, ub);
+        ipvJSIndex.push(countryCode);
         db.query('INSERT INTO ' + table + ' VALUES (?, ?, ?)', [
           countryCode, lb, ub
         ]);
@@ -76,7 +77,7 @@ function generate() {
             .replace('//:LICENSE.txt', fs.readFileSync('./LICENSE.txt'))
             .replace('//:utils.js', fs.readFileSync('./src/utils.js'))
             .replace('//:eu-countries.js', fs.readFileSync('./src/eu-countries.js'))
-            .replace('//:ipv4', 'var ipv4 = ' + JSON.stringify(ipv4JS) + ';')
+            .replace('//:ipv4', 'var ipv4 = new Int32ArrayMaybe(' + JSON.stringify(ipv4JS) + ');')
             .replace('//:ipv4-length', 'var ipv4Length = ' + ipv4JS.length + ';')
             .replace('//:ipv4-countries', 'var ipv4Countries = ' + JSON.stringify(ipv4JSIndex) + ';')
             .replace('//:ipv6', 'var ipv6 = ' + JSON.stringify(ipv6JS) + ';')
