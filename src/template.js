@@ -59,7 +59,7 @@ if (module.parent) {
     } else {
       console.log('');
       console.log('usage example');
-      console.log('  ./ipcc 86.141.168.112');
+      console.log('  ./ipcc 109.200.4.149');
       console.log('  ./ipcc fe80::200:f8ff:fe21:67cf');
       console.log('');
     }

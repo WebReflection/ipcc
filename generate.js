@@ -85,7 +85,7 @@ function generate() {
             .replace('//:ipv6-countries', 'var ipv6Countries = ' + JSON.stringify(ipv6JSIndex) + ';')
         );
         var ipcc = require('./build/ipcc');
-        var ip = '86.141.168.112';
+        var ip = '109.200.4.149';
         console.assert(ipcc.resolve(ip) === 'UK', 'recognizes a UK ipv4 address');
         console.assert(ipcc.isEU(ip), 'UK is recognized as EU');
         ip = 'fe80::200:f8ff:fe21:67cf';
