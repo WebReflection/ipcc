@@ -1,0 +1,35 @@
+{
+  "name": "ipcc",
+  "version": "0.1.0",
+  "description": "Standalone IP to ISO2 Country Code",
+  "main": "./build/ipcc",
+  "devDependencies": {
+    "dblite": "^0.7.6"
+  },
+  "scripts": {
+    "test": "echo \"Tests performed at build time. Nothing to do here ;-)\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WebReflection/ipcc.git"
+  },
+  "keywords": [
+    "iso2",
+    "ip2country",
+    "ip2cc",
+    "country",
+    "code",
+    "EU",
+    "cookie",
+    "law"
+  ],
+  "author": "Andrea Giammarchi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WebReflection/ipcc/issues"
+  },
+  "homepage": "https://github.com/WebReflection/ipcc",
+  "bin": {
+    "ipcc": "./build/ipcc"
+  }
+}

@@ -1,0 +1,10 @@
+node_modules/*
+src/*
+.DS_Store
+.gitmodules
+.gitignore
+.git
+*.csv
+*.sqlite
+*.gz
+*.js
