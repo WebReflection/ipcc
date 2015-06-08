@@ -63,7 +63,7 @@ and create a file called dbip-country.sqlite.
 It will also generate a fresh new copy of `build/ipcc` file.
 
 In order to query the database, you can use [src/utils.js](https://github.com/WebReflection/ipcc/blob/master/src/utils.js) file
-which together with `dblite` shouild give you the ability to query as such:
+which together with `dblite` should give you the ability to query as such:
 ```js
 // copy utils.js functions on top
 var
