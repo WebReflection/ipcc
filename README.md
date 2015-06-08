@@ -40,9 +40,14 @@ Please note latter 2 methods are very simple and are not suitable to validate en
 Used as stand alone, the script will actually use a lot of CPU in order to properly parse static Arrays defined in it.
 
 However, this is the way you can use it:
+
 ```sh
-$ ./ipcc 109.200.4.149  # UK (EU)
-$ ./ipcc 216.58.209.238 # US
+$ # if the following command fails, try with sudo
+$ npm install -g ipcc
+$ 
+$ # test some IP (v4 or v6)
+$ ipcc 109.200.4.149  # UK (EU)
+$ ipcc 216.58.209.238 # US
 ```
 Please note that only *EU* countries will contain the `(EU)` suffix.
 
