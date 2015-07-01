@@ -4,7 +4,7 @@ var
   fs = require('fs'),
   zlib = require('zlib'),
   dbName = require('path').resolve('./dbip-country.csv'),
-  dbURL = 'http://download.db-ip.com/free/dbip-country-2015-06.csv.gz',
+  dbURL = 'http://download.db-ip.com/free/dbip-country-2015-07.csv.gz',
   dblite = require('dblite')
 ;
 
