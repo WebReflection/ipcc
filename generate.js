@@ -4,7 +4,7 @@ var
   fs = require('fs'),
   zlib = require('zlib'),
   dbName = require('path').resolve('./dbip-country.csv'),
-  dbURL = 'http://download.db-ip.com/free/dbip-country-2015-07.csv.gz',
+  dbURL = 'https://download.db-ip.com/free/dbip-country-lite-2019-09.csv.gz',
   dblite = require('dblite')
 ;
 
@@ -89,7 +89,7 @@ function generate() {
         console.assert(ipcc.resolve(ip) === 'UK', 'recognizes a UK ipv4 address');
         console.assert(ipcc.isEU(ip), 'UK is recognized as EU');
         ip = 'fe80::200:f8ff:fe21:67cf';
-        console.assert(ipcc.resolve(ip) === 'US', 'recognizes a US ipv6 address');
+        console.assert(ipcc.resolve(ip) === 'ZZ', 'recognizes a ZZ ipv6 address');
         console.assert(!ipcc.isEU(ip), 'US is recognized as non EU');
       });
     })

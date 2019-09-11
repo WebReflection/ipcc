@@ -1,5 +1,6 @@
 node_modules/*
 src/*
+package-lock.json
 .DS_Store
 .gitmodules
 .gitignore
